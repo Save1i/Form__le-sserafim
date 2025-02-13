@@ -4,15 +4,76 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <fieldset>
-      <label for="first_name">First Name</label>
-      <input type="text" id="first_name" name="first_name" />
-
-      <label for="last_name">Last Name</label>
-      <input type="text" id="last_name" name="last_name" />
-    </fieldset>
+    <div class="container">
+      <main class="main">
+        <div class="decorate"></div>
+        <div class="general">
+          <div class="info">
+            <p class="info__text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa ea veritatis, cumque
+              non nulla aliquid laboriosam quis magnam amet odit iusto nam vitae sequi beatae id
+              facere, dolores placeat expedita!
+            </p>
+            <div class="register">
+              <div class="register__inner">
+                <p class="title">Let`s do this!</p>
+                <form class="form" action="#" method="post">
+                  <div class="input">
+                    <label for="first">first name</label>
+                    <input type="text" class="first-name" id="first" required />
+                  </div>
+                  <div class="input">
+                    <label for="last">last name</label>
+                    <input type="text" class="last-name" id="last" required />
+                  </div>
+                  <div class="input">
+                    <label for="email">email</label>
+                    <input type="email" class="email" id="email" required />
+                  </div>
+                  <div class="input">
+                    <label for="phone">phone number</label>
+                    <input type="tel" class="phone-number" id="phone" required />
+                  </div>
+                  <div class="input">
+                    <label for="password">password</label>
+                    <input
+                      type="password"
+                      class="password error"
+                      id="password"
+                      value=" "
+                      required
+                    />
+                  </div>
+                  <div class="input">
+                    <label for="con-password">confirm password</label>
+                    <input
+                      type="password"
+                      class="confirm-password error"
+                      id="con-password"
+                      required
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="bottom">
+              <button class="btn" type="submit">Create Account</button>
+              <p class="login">Alredy have an account? <span>Log in</span></p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="main.js"></script>
   </body>
 </html>
